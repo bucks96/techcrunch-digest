@@ -1,0 +1,48 @@
+name: TechCrunch Daily Digest
+
+on:
+  schedule:
+    # 07:07 UTC every day  (adjust to your preferred time)
+    - cron: "7 7 * * *"
+  workflow_dispatch:   # lets you trigger a run manually from the GitHub UI
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit the updated DB back to the repo
+
+    steps:
+      - name: Checkout repository (including articles DB)
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EMAIL_FROM:        ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO:          ${{ secrets.EMAIL_TO }}
+          SMTP_HOST:         ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:         ${{ secrets.SMTP_PORT }}
+          SMTP_USER:         ${{ secrets.SMTP_USER }}
+          SMTP_PASS:         ${{ secrets.SMTP_PASS }}
+        run: python digest.py
+
+      - name: Commit updated articles database
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/articles.db
+          # Only commit when the DB actually changed (new articles were added)
+          git diff --staged --quiet || \
+            git commit -m "chore: articles db $(date -u +%Y-%m-%d)"
+          git push
