@@ -8,8 +8,15 @@ __pycache__/
 logs/
 *.log
 
-# Local env file (never commit secrets)
+# Local env (never commit secrets)
 .env
+.env.local
+
+# Next.js
+.next/
+out/
+node_modules/
 
 # OS
 .DS_Store
+Thumbs.db
