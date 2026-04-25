@@ -6,8 +6,8 @@ import { formatDate } from "@/lib/utils";
 
 interface Props {
   currentDate: string;
-  prev: string | null; // older date
-  next: string | null; // newer date
+  prev: string | null;
+  next: string | null;
   allDates: string[];
 }
 
@@ -20,7 +20,7 @@ export function DateNav({ currentDate, prev, next, allDates }: Props) {
       {prev ? (
         <Link
           href={`/${prev}`}
-          className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-600 shadow-sm hover:bg-slate-50 hover:text-slate-900 transition-colors"
+          className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-600 shadow-sm transition-colors hover:bg-slate-50 hover:text-slate-900"
         >
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -32,11 +32,11 @@ export function DateNav({ currentDate, prev, next, allDates }: Props) {
         <div className="w-24" />
       )}
 
-      {/* Date picker dropdown */}
+      {/* Date picker */}
       <div className="relative">
         <button
           onClick={() => setOpen(!open)}
-          className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700 shadow-sm hover:bg-slate-50 transition-colors"
+          className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700 shadow-sm transition-colors hover:bg-slate-50"
         >
           <svg className="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -50,7 +50,7 @@ export function DateNav({ currentDate, prev, next, allDates }: Props) {
         {open && (
           <>
             <div className="fixed inset-0 z-10" onClick={() => setOpen(false)} />
-            <div className="absolute left-1/2 top-full z-20 mt-1 max-h-60 w-52 -translate-x-1/2 overflow-y-auto rounded-xl border border-slate-200 bg-white py-1 shadow-lg">
+            <div className="absolute left-1/2 top-full z-20 mt-1.5 max-h-64 w-52 -translate-x-1/2 overflow-y-auto rounded-xl border border-slate-200 bg-white py-1 shadow-lg">
               {allDates.map((d) => (
                 <Link
                   key={d}
@@ -74,7 +74,7 @@ export function DateNav({ currentDate, prev, next, allDates }: Props) {
       {next ? (
         <Link
           href={`/${next}`}
-          className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-600 shadow-sm hover:bg-slate-50 hover:text-slate-900 transition-colors"
+          className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-600 shadow-sm transition-colors hover:bg-slate-50 hover:text-slate-900"
         >
           <span className="hidden sm:inline">{formatDate(next)}</span>
           <span className="sm:hidden">Newer</span>

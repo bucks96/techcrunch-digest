@@ -14,11 +14,31 @@ export interface RelatedArticle {
   future_outlook: string;
 }
 
+export interface FundingRound {
+  round: string;
+  amount: string;
+  year: number;
+}
+
+export interface CompanyIntel {
+  company_name: string | null;
+  what_it_does: string;
+  founded_year: number | null;
+  is_public: boolean;
+  ticker: string | null;
+  exchange: string | null;
+  total_funding: string | null;
+  key_funding_rounds: FundingRound[];
+  revenue: string | null;
+  net_income: string | null;
+}
+
 export interface Analysis {
   headline: string;
   summary: string;
   concepts: Concept[];
   related_articles: RelatedArticle[];
+  company_intel?: CompanyIntel;
 }
 
 export interface Article {

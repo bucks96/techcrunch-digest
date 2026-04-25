@@ -218,7 +218,19 @@ Focus on mechanism, nuance, risk, or why this specific variant matters.",
       "update_summary": "2-3 sentences: how today's news changes, advances, or contradicts the earlier situation",
       "future_outlook": "1-2 sentences: what to watch next given this development arc"
     }}
-  ]
+  ],
+  "company_intel": {{
+    "company_name": "Primary company this article is about (null if no specific company)",
+    "what_it_does": "2-3 sentences describing core business model and product/service",
+    "founded_year": 2003,
+    "is_public": true,
+    "ticker": "TSLA",
+    "exchange": "NASDAQ",
+    "total_funding": null,
+    "key_funding_rounds": [],
+    "revenue": "$97.7B (FY2024)",
+    "net_income": "$7.1B (FY2024)"
+  }}
 }}
 
 STRICT RULES:
@@ -233,7 +245,11 @@ esoteric industry terminology.
 3. related_articles: only genuine connections — same company, same product line, same \
 ongoing regulatory thread, or the same macro story arc. Use [] if nothing is genuinely related. \
 Copy the article_id, title, published_date, and url EXACTLY from the historical list.
-4. Return ONLY the raw JSON object. No markdown code fences. No extra text.
+4. company_intel: use your training knowledge. For public companies set total_funding=null and \
+key_funding_rounds=[]. For private/startup companies include funding rounds if known. \
+Use null for any values you are not confident about. Prefix uncertain figures with "~". \
+If the article covers no specific company (policy/industry piece), set company_name=null.
+5. Return ONLY the raw JSON object. No markdown code fences. No extra text.
 
 ARTICLE TO ANALYSE:
 Title:     {title}
@@ -291,7 +307,7 @@ def analyze_article(
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=2048,
+        max_tokens=3000,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": prompt}],
     )
@@ -304,6 +320,7 @@ def analyze_article(
     analysis.setdefault("summary", "")
     analysis.setdefault("concepts", [])
     analysis.setdefault("related_articles", [])
+    analysis.setdefault("company_intel", None)
 
     return analysis
 

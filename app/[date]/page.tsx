@@ -18,35 +18,32 @@ export async function generateStaticParams() {
 export default function DigestPage({ params }: Props) {
   const { date } = params;
 
-  // Validate date format
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) notFound();
 
   const digest = getDigest(date);
   if (!digest) notFound();
 
   const index = getIndex();
-  const nav   = index ? adjacentDates(index.dates, date) : { prev: null, next: null };
+  const nav = index ? adjacentDates(index.dates, date) : { prev: null, next: null };
 
   return (
     <div className="min-h-screen bg-slate-50">
       <Header date={date} articleCount={digest.article_count} generatedAt={digest.generated_at} />
 
       <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-        {/* Date navigation */}
         <DateNav currentDate={date} prev={nav.prev} next={nav.next} allDates={index?.dates ?? []} />
 
-        {/* Article list */}
-        <div className="mt-8 space-y-6">
+        <div className="mt-8 space-y-5">
           {digest.articles.map((article, idx) => (
             <ArticleCard key={article.id} article={article} index={idx + 1} />
           ))}
         </div>
 
-        {/* Footer */}
         <footer className="mt-16 border-t border-slate-200 py-8 text-center text-xs text-slate-400">
           <p>
             Powered by{" "}
-            <span className="font-medium text-slate-500">Claude claude-sonnet-4-6</span> · Source:{" "}
+            <span className="font-medium text-slate-500">Claude claude-sonnet-4-6</span> ·
+            Source:{" "}
             <a
               href="https://techcrunch.com"
               target="_blank"
