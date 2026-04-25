@@ -19,7 +19,7 @@ export function ArticleCard({ article, index }: Props) {
     analysis.company_intel ?? null
   );
   const [loadingIntel, setLoadingIntel] = useState(false);
-  const [intelError, setIntelError] = useState(false);
+  const [intelError, setIntelError] = useState<string | null>(null);
 
   const hasConcepts = (analysis.concepts?.length ?? 0) > 0;
   const hasRelated = (analysis.related_articles?.length ?? 0) > 0;
@@ -31,7 +31,7 @@ export function ArticleCard({ article, index }: Props) {
     }
     if (loadingIntel) return;
     setLoadingIntel(true);
-    setIntelError(false);
+    setIntelError(null);
     try {
       const res = await fetch("/api/company-intel", {
         method: "POST",
@@ -42,12 +42,15 @@ export function ArticleCard({ article, index }: Props) {
           author: article.author ?? "",
         }),
       });
-      if (!res.ok) throw new Error("non-ok");
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error ?? `HTTP ${res.status}`);
+      }
       const data: CompanyIntel = await res.json();
       setCompanyIntel(data);
       setShowCompany(true);
-    } catch {
-      setIntelError(true);
+    } catch (e) {
+      setIntelError(e instanceof Error ? e.message : "Unknown error");
     } finally {
       setLoadingIntel(false);
     }
@@ -185,7 +188,7 @@ export function ArticleCard({ article, index }: Props) {
         )}
         {intelError && (
           <div className="mt-3 rounded-xl border border-red-100 bg-red-50 px-4 py-3 text-xs text-red-600">
-            Could not load company profile. Ensure ANTHROPIC_API_KEY is set.
+            Could not load company profile: {intelError}
           </div>
         )}
       </div>
