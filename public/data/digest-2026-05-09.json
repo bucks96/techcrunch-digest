@@ -1,0 +1,281 @@
+{
+  "date": "2026-05-09",
+  "generated_at": "2026-05-10T09:02:55.765741+00:00",
+  "article_count": 6,
+  "articles": [
+    {
+      "id": "https://techcrunch.com/?p=3121027",
+      "title": "Voice AI in India is hard. Wispr Flow is betting on it anyway.",
+      "url": "https://techcrunch.com/2026/05/09/voice-ai-in-india-is-hard-wispr-flow-is-betting-on-it-anyway/",
+      "published_date": "Sun, 10 May 2026 02:00:00 +0000",
+      "author": "Jagmeet Singh",
+      "content": "Wispr Flow says growth accelerated in India after its Hinglish rollout, even as voice AI products continue to face challenges.",
+      "analysis": {
+        "headline": "Wispr Flow Bets on Hinglish to Crack India's Voice AI Market — And Claims It's Working",
+        "summary": "Wispr Flow, a voice AI dictation product, reports accelerated growth in India following the rollout of Hinglish (Hindi-English code-switching) support. The move targets one of the world's largest smartphone markets where multilingual, code-switched speech remains a persistent challenge for voice interfaces. The company is pressing forward despite well-documented difficulties in deploying voice AI in linguistically complex, acoustically noisy environments typical of Indian usage contexts.",
+        "concepts": [
+          {
+            "term": "Hinglish (Code-Switching in ASR)",
+            "explanation": "Code-switching — the fluid alternation between two languages mid-sentence — is one of the hardest problems in automatic speech recognition (ASR). Standard monolingual acoustic and language models fail at phoneme boundaries where lexical items from different phonological systems collide. Handling Hinglish requires either a unified multilingual model trained on mixed-language corpora or a real-time language-identification layer that switches decoding graphs dynamically, both of which carry latency and accuracy tradeoffs.",
+            "context": "Wispr Flow's Hinglish rollout is the core product unlock cited for India growth acceleration — suggesting its ASR pipeline was retrained or fine-tuned specifically on code-switched Hindi-English speech data."
+          },
+          {
+            "term": "Voice-First Dictation AI (vs. Voice Assistant Paradigm)",
+            "explanation": "Voice dictation AI — focused purely on high-accuracy speech-to-text transcription across applications — is architecturally and commercially distinct from conversational voice assistants. It targets productivity workflows, competes on word error rate (WER), punctuation restoration, and OS-level integration depth rather than intent parsing or dialogue management. Monetization typically follows a SaaS per-seat model rather than device bundling.",
+            "context": "Wispr Flow operates in this dictation-layer category, positioning against tools like Otter.ai or the native OS dictation engines, with India as a high-upside but technically demanding expansion market."
+          },
+          {
+            "term": "Acoustic Environment Robustness",
+            "explanation": "Voice AI performance degrades significantly in high-noise, reverberant, or spectrally crowded acoustic environments — conditions prevalent in dense urban India (traffic, open-plan offices, street ambient noise). Robustness requires noise-suppression preprocessing, far-field microphone array support, or model-level noise augmentation during training. Neglecting this creates a systematic quality gap between lab benchmarks and real-world WER in target markets.",
+            "context": "This is a key structural challenge Wispr Flow faces in India beyond the language model problem — hardware diversity and ambient noise conditions differ sharply from Western markets where most voice AI products are optimized."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Wispr Flow",
+          "what_it_does": "Wispr Flow develops a voice-first AI dictation tool that allows users to compose text via speech across any application on their device. Its core product is an OS-level dictation layer with AI-powered transcription, punctuation, and formatting, targeting productivity users. The company differentiates on multilingual and code-switched language support, with recent expansion into the Indian market via Hinglish capability.",
+          "founded_year": null,
+          "is_public": false,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=2973217",
+      "title": "So you’ve heard these AI terms and nodded along; let’s fix that",
+      "url": "https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+      "published_date": "Sat, 09 May 2026 21:45:00 +0000",
+      "author": "Natasha Lomas, Romain Dillet, Kyle Wiggers, Lucas Ropek",
+      "content": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+      "analysis": {
+        "headline": "AI Jargon Glossary from TechCrunch: Useful Primer, But Thin on Analytical Depth",
+        "summary": "TechCrunch published a collaborative glossary by four writers defining key AI terminology for general readers. The piece addresses growing confusion around AI-specific language as the sector accelerates. No company, deal, or data metrics are central to the article. Its significance lies in signaling how mainstream the AI lexicon has become — and how much definitional standardization the industry still lacks.",
+        "concepts": [
+          {
+            "term": "AI Glossary / Lexical Standardization",
+            "explanation": "In rapidly evolving technical fields, the absence of standardized terminology creates material risk: misaligned expectations between buyers and vendors, regulatory ambiguity, and investor mispricing. When four journalists at a major outlet feel compelled to publish a definitional guide, it reflects that the field's vocabulary has outpaced professional comprehension — a classic sign of a hype cycle mid-expansion.",
+            "context": "The article's existence is itself a data point: AI terminology is now diffuse enough across enterprise, finance, and policy circles that even experienced professionals are nodding through terms they don't fully understand."
+          },
+          {
+            "term": "Slang vs. Technical Terminology in AI Discourse",
+            "explanation": "AI 'slang' — terms like hallucination, grounding, alignment, or emergent behavior — often carries precise technical meaning in research contexts but gets used loosely in product and business settings. This semantic drift introduces real operational risk: a procurement team specifying 'RAG-enabled' tooling may not understand retrieval architecture trade-offs, while a board approving 'agentic AI' deployment may not grasp autonomy and liability implications.",
+            "context": "The article groups slang alongside formal terminology, suggesting the authors recognize this blurring — but a glossary format without mechanistic depth risks reinforcing shallow understanding rather than correcting it."
+          },
+          {
+            "term": "Collaborative Journalism on Technical Topics",
+            "explanation": "Multi-byline explainer pieces at outlets like TechCrunch reflect an editorial strategy of pooling beat expertise to cover cross-disciplinary topics. In AI coverage this matters because no single journalist typically holds deep fluency across model architecture, regulatory frameworks, and market dynamics simultaneously — leading to glossaries that may be accurate but uneven in analytical rigor.",
+            "context": "Four authors contributed here, spanning AI, policy, and general tech beats — a structure that can produce breadth but risks inconsistent depth across entries."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": null,
+          "what_it_does": null,
+          "founded_year": null,
+          "is_public": null,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3121044",
+      "title": "Fintech startup Parker files for bankruptcy",
+      "url": "https://techcrunch.com/2026/05/09/fintech-startup-parker-files-for-bankruptcy/",
+      "published_date": "Sat, 09 May 2026 20:32:17 +0000",
+      "author": "Anthony Ha",
+      "content": "Parker, a well-funded startup offering corporate credit cards and banking services, has filed for bankruptcy and is widely reported to have shut down.",
+      "analysis": {
+        "headline": "Parker's Bankruptcy Exposes Fragility of Well-Funded B2B Fintech Credit Models",
+        "summary": "Parker, a corporate credit card and banking services startup, has filed for bankruptcy and reportedly ceased operations. The collapse is notable given the company's well-funded status, signaling that strong venture backing does not insulate B2B fintech lenders from structural vulnerabilities in credit underwriting, customer acquisition costs, and the tightening unit economics that have pressured embedded finance and corporate card issuers since 2022.",
+        "concepts": [
+          {
+            "term": "Corporate charge card underwriting risk",
+            "explanation": "Unlike consumer credit cards governed by the CARD Act, corporate charge cards — especially those targeting SMBs — carry concentrated credit exposure to businesses with volatile cash flows and limited credit history. Underwriting models often rely on revenue-based signals (e.g., Plaid-linked bank data) rather than FICO, making them susceptible to rapid deterioration in merchant health during downturns. Loss rates can spike nonlinearly when a startup's customer cohort shares sectoral exposure.",
+            "context": "Parker offered corporate credit products to businesses, meaning its credit book's performance was directly tied to the financial health of its SMB or startup-heavy customer base — a cohort that has faced significant stress since 2022."
+          },
+          {
+            "term": "Embedded banking / Banking-as-a-Service (BaaS) dependency",
+            "explanation": "Corporate card fintechs typically don't hold banking licenses; they rely on sponsor bank relationships and BaaS middleware providers (e.g., Synapse, Stripe Treasury, Unit) to issue cards, hold deposits, and process payments. Regulatory scrutiny of these arrangements — including OCC and FDIC guidance on third-party risk — has increased compliance costs and operational fragility, as the Synapse collapse in 2024 demonstrated.",
+            "context": "Parker's banking services offering almost certainly depended on a sponsor bank and BaaS stack, meaning its operational continuity and regulatory standing were partially contingent on third-party relationships."
+          },
+          {
+            "term": "Chapter 7 vs. Chapter 11 bankruptcy distinction",
+            "explanation": "Chapter 11 allows a company to restructure debts and continue operating under court supervision; Chapter 7 is a liquidation proceeding where a trustee winds down assets. The reported full shutdown of Parker strongly implies a Chapter 7 filing — or a Chapter 11 with an immediate cessation of operations — indicating no viable path to reorganization was identified, often because the core asset (loan book or card portfolio) has been impaired beyond recovery.",
+            "context": "Parker is reported to have shut down entirely alongside the bankruptcy filing, suggesting this is a liquidation scenario rather than a restructuring attempt."
+          },
+          {
+            "term": "Venture debt exposure in fintech insolvency",
+            "explanation": "Well-funded fintechs frequently combine equity raises with venture debt facilities (from lenders like Hercules, Silicon Valley Bank successors, or Goldman) and credit facilities used to fund their lending portfolios. In insolvency, secured creditors on credit facilities have priority claims over equity holders and often over unsecured operational creditors, meaning employees, vendors, and customers may recover little even when a company appeared well-capitalized on its last equity raise.",
+            "context": "Parker's 'well-funded' status implies meaningful equity was raised, but the bankruptcy suggests liabilities — potentially including credit facility drawdowns funding the card portfolio — exceeded recoverable assets."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Parker",
+          "what_it_does": "Parker was a B2B fintech startup providing corporate credit cards and banking services, primarily targeting businesses seeking working capital and spend management tools. Its model centered on issuing credit products and layering in banking features, competing in the crowded SMB-focused corporate card space alongside players like Brex, Ramp, and Relay.",
+          "founded_year": null,
+          "is_public": false,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": "~$20M+",
+          "key_funding_rounds": [
+            {
+              "round": "Seed",
+              "amount": null,
+              "date": null,
+              "investors": null
+            }
+          ],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3121041",
+      "title": "GM agrees to pay $12.75M in California driver privacy settlement",
+      "url": "https://techcrunch.com/2026/05/09/gm-agrees-to-pay-12-75m-in-california-driver-privacy-settlement/",
+      "published_date": "Sat, 09 May 2026 19:05:30 +0000",
+      "author": "Anthony Ha",
+      "content": "General Motors has reached a privacy-related settlement with a group of law enforcement agencies led by California Attorney General Rob Bonta.",
+      "analysis": {
+        "headline": "GM Pays $12.75M to Settle California AG's Driver Data Privacy Probe — Connected-Car Surveillance Under Scrutiny",
+        "summary": "General Motors settled with California Attorney General Rob Bonta and allied law enforcement agencies for $12.75M over driver privacy violations. The case centers on GM's connected-vehicle data practices, likely involving collection and sharing of granular driving behavior data without adequate consumer disclosure or consent. The settlement signals intensifying state-level enforcement against automakers monetizing telematics data, following earlier scrutiny of GM's OnStar Smart Driver program that sold data to insurance brokers.",
+        "concepts": [
+          {
+            "term": "Telematics Data Monetization",
+            "explanation": "Automakers collect granular trip-level behavioral data — hard braking, acceleration profiles, location history — via embedded connectivity modules and can license this to third parties including insurers, data brokers, and fleet analytics firms. The revenue model creates structural incentives to expand data collection beyond what consumers reasonably expect, and consent mechanisms are often buried in lengthy terms of service. The core legal tension is whether click-through consent at vehicle setup satisfies state privacy statutes requiring meaningful disclosure.",
+            "context": "GM's settlement almost certainly relates to its OnStar Smart Driver program, which was reported to have shared driving behavior scores with LexisNexis and Verisk for insurance underwriting purposes without consumers understanding their premiums could be affected."
+          },
+          {
+            "term": "California Consumer Privacy Act (CCPA) / CPRA Enforcement",
+            "explanation": "The CCPA (amended by Prop 24 into the CPRA) grants California residents rights to opt out of the sale or sharing of personal information and requires businesses to disclose data practices with specificity. The CPRA created the California Privacy Protection Agency (CPPA) with independent enforcement authority, but the AG retains concurrent enforcement power — particularly relevant for cases involving sensitive geolocation and driving behavior data, which receive heightened protection. Penalties can reach $7,500 per intentional violation, making large-scale data sharing programs potentially catastrophic in aggregate.",
+            "context": "The AG-led multi-agency settlement signals use of CCPA/CPRA's sensitive data provisions and possibly the California Invasion of Privacy Act (CIPA), framing GM's telematics data sharing as an unauthorized sale or disclosure requiring affirmative consumer consent."
+          },
+          {
+            "term": "Multistate AG Enforcement Coalition",
+            "explanation": "State attorneys general increasingly coordinate privacy and consumer protection actions, pooling investigative resources and presenting a unified settlement front that raises financial stakes beyond what any single state could achieve. These coalitions also establish de facto national compliance standards — a settlement condition imposed by California effectively becomes a baseline for operations in all 50 states given the impracticality of state-by-state data architecture. This mechanism bypasses Congressional gridlock on federal privacy legislation.",
+            "context": "The settlement was led by California AG Bonta with a 'group of law enforcement agencies,' suggesting a multistate coalition that amplifies both the penalty and the precedential weight for connected-vehicle data governance across the industry."
+          },
+          {
+            "term": "Sensitive Geolocation Data — Regulatory Classification",
+            "explanation": "Under CPRA and several other state statutes (Colorado CPA, Connecticut CTDPA), precise geolocation data is classified as 'sensitive personal information' triggering opt-in consent requirements rather than the default opt-out. For automakers, continuous GPS tracking of vehicle movement creates records of home addresses, medical facility visits, religious attendance, and political activity — categories receiving explicit heightened protection post-Dobbs in several state legislations. The FTC has also signaled it treats persistent location tracking as an unfair practice under Section 5.",
+            "context": "GM's telematics systems generate continuous location streams; if this data was shared with third parties without opt-in consent, it directly implicates sensitive geolocation provisions that carry higher penalty thresholds."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "General Motors",
+          "what_it_does": "General Motors designs, manufactures, and sells vehicles and vehicle parts globally under brands including Chevrolet, GMC, Buick, and Cadillac. The company also operates GM Financial for automotive lending and insurance services, and has invested heavily in EV development via the Ultium platform and autonomous vehicle subsidiary Cruise. GM generates significant ancillary revenue through connected-services subscriptions via its OnStar platform.",
+          "founded_year": 1908,
+          "is_public": true,
+          "ticker": "GM",
+          "exchange": "NYSE",
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": "~$187B (FY2024)",
+          "net_income": "~$6.0B (FY2024)"
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3120223",
+      "title": "The Instax Wide 400 builds on instant photography’s simplicity and stretches it, literally",
+      "url": "https://techcrunch.com/2026/05/09/the-instax-wide-400-builds-on-instant-photographys-simplicity-and-stretches-it-literally/",
+      "published_date": "Sat, 09 May 2026 15:45:00 +0000",
+      "author": "Aisha Malik",
+      "content": "In an AI and digital world, analog instant film and retro-style cameras continue to remain popular, fueled by a mix of both nostalgia and novelty.",
+      "analysis": {
+        "headline": "Fujifilm's Instax Wide 400 Bets on Analog's Enduring Appeal in an AI-Saturated Camera Market",
+        "summary": "Fujifilm's Instax Wide 400 extends the Instax line with a wider film format, targeting consumers seeking tactile, analog experiences amid digital and AI-driven photography dominance. The launch underscores sustained commercial demand for instant film cameras, a niche Fujifilm has successfully defended against smartphone ubiquity through nostalgia-driven positioning and format differentiation. No specific sales figures or pricing are disclosed in the article.",
+        "concepts": [
+          {
+            "term": "Instant film format differentiation",
+            "explanation": "In analog instant photography, film format (frame size, aspect ratio, chemical composition) is a primary lever for product line segmentation. The 'Wide' format produces a 99×62mm print versus the standard Instax Mini's 62×46mm — a meaningful distinction that targets different use cases (group shots, landscapes) and commands a premium ASP on both hardware and consumables. Consumable attachment is the real margin story: razor-and-blade economics dominate this category.",
+            "context": "The Wide 400's 'literal stretch' is a format upgrade from prior Wide models, designed to refresh the consumables cycle and justify new hardware SKUs without cannibalizing the Mini segment."
+          },
+          {
+            "term": "Nostalgia marketing as a demand driver",
+            "explanation": "Nostalgia marketing leverages consumers' emotional association with past experiences to reduce price sensitivity and build category loyalty outside purely functional product comparisons. In consumer electronics, this is particularly potent when the analog experience is genuinely irreproducible digitally — physical, tangible outputs create a 'scarcity of feel' that streaming or AI generation cannot replicate. Brands must balance authentic retro aesthetics with modern usability to avoid alienating younger demographics unfamiliar with the original format.",
+            "context": "Fujifilm's Instax line has sustained growth by positioning instant film as both a nostalgic artifact and a social novelty for Gen Z — a dual-audience strategy that insulates it from direct smartphone competition."
+          },
+          {
+            "term": "Analog-digital substitution resistance",
+            "explanation": "Certain analog product categories demonstrate persistent demand despite superior digital alternatives — a phenomenon tied to experiential differentiation rather than functional utility. Instant film, vinyl records, and mechanical watches exemplify this: consumers pay a premium for process, physicality, and constraint (e.g., the forced scarcity of a finite film roll). This resistance is commercially durable but volume-capped, typically settling into a stable enthusiast-driven niche rather than mass-market growth.",
+            "context": "The article's framing of AI and digital dominance as a backdrop, rather than a threat, reflects Fujifilm's successful repositioning of Instax as a complementary experience rather than a competing imaging solution."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Fujifilm",
+          "what_it_does": "Fujifilm Holdings is a Japanese multinational operating across imaging, healthcare, and materials science. Its consumer imaging division produces the Instax line of instant film cameras and film cartridges, generating recurring consumables revenue. The company has diversified significantly into medical imaging, pharmaceuticals, and semiconductor materials, reducing dependence on its legacy photographic film business.",
+          "founded_year": 1934,
+          "is_public": true,
+          "ticker": "FUJIY",
+          "exchange": "OTC (ADR); primary listing on Tokyo Stock Exchange (TSE: 4901)",
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": "~¥2.97T (~$20B USD, FY2024)",
+          "net_income": "~¥153B (~$1B USD, FY2024)"
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3121025",
+      "title": "Nvidia has already committed $40B to equity AI deals this year",
+      "url": "https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/",
+      "published_date": "Sat, 09 May 2026 14:43:30 +0000",
+      "author": "Anthony Ha",
+      "content": "Nvidia continues to be a big investor in the AI ecosystem.",
+      "analysis": {
+        "headline": "Nvidia Deploys $40B in Equity AI Investments in 2025, Cementing Strategic Ecosystem Control",
+        "summary": "Nvidia has committed $40 billion to equity-based AI deals in 2025 alone, signaling a deliberate shift from chip vendor to ecosystem orchestrator. By taking equity stakes rather than licensing or supply agreements, Nvidia embeds itself in the capital structures of AI companies dependent on its hardware, creating compounding strategic leverage. The scale — $40B in under five months — rivals dedicated AI venture funds and raises questions about antitrust exposure and conflicts of interest in a market where Nvidia also supplies critical infrastructure.",
+        "concepts": [
+          {
+            "term": "Equity AI deals (strategic equity investment)",
+            "explanation": "Unlike venture capital, corporate strategic equity investments are made to secure competitive positioning, not purely financial returns. The investor gains board influence, information rights, and preferential commercial terms — while the portfolio company gains a credible signal and often preferential hardware access. The risk is regulatory scrutiny under HSR Act thresholds and potential antitrust concerns if equity stakes create exclusivity or foreclosure effects in upstream supply markets.",
+            "context": "Nvidia's $40B in equity commitments this year positions it not merely as a chip supplier but as a structural stakeholder in the AI value chain, giving it visibility into — and influence over — the strategic direction of its largest customers."
+          },
+          {
+            "term": "Vertical integration via equity (ecosystem lock-in through capital)",
+            "explanation": "When a dominant input supplier takes equity in downstream companies, it creates a form of soft vertical integration without formal M&A. Portfolio companies face implicit pressure to maintain or deepen commercial relationships with the investor, reinforcing switching costs. Regulators increasingly scrutinize this pattern — seen previously in semiconductor and telecom — as a mechanism to entrench platform dominance without triggering traditional merger review.",
+            "context": "Nvidia's simultaneous role as GPU supplier, CUDA platform owner, and now major equity investor in AI companies creates overlapping dependencies that could attract FTC or DOJ attention, particularly if investment terms include hardware preference clauses."
+          },
+          {
+            "term": "HSR Act (Hart-Scott-Rodino Antitrust Improvements Act) filing thresholds",
+            "explanation": "The HSR Act requires pre-merger notification to the FTC and DOJ for acquisitions exceeding certain thresholds (adjusted annually; ~$119.5M in 2025 for size-of-transaction). Equity investments below controlling stakes can sometimes avoid HSR filing under the 'investment-only' exemption, but that exemption is narrow and does not apply if the investor seeks board seats or influences competitive decisions. A $40B aggregate commitment across multiple deals almost certainly triggers multiple individual HSR filings.",
+            "context": "The scale and strategic nature of Nvidia's equity deals likely means many individual investments clear HSR thresholds, inviting regulatory review at a time when AI market concentration is already under Congressional and FTC scrutiny."
+          },
+          {
+            "term": "Conflict of interest in dual-role capital deployment",
+            "explanation": "When a company is simultaneously a critical supplier and a major equity investor in its customers, it faces structural conflicts: investment decisions can be influenced by which portfolio companies buy more hardware, and supply allocation decisions can favor investees. This dual role is common in corporate venture capital but at $40B scale it is categorically different from typical CVC programs, resembling the market power dynamics seen in Intel Capital at its peak or Qualcomm Ventures in the mobile era.",
+            "context": "Nvidia's equity commitments, combined with constrained GPU supply, create a scenario where investment and supply decisions are difficult to fully decouple, a dynamic that portfolio companies, competitors, and regulators will scrutinize."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Nvidia Corporation",
+          "what_it_does": "Nvidia designs and sells graphics processing units (GPUs) and system-on-chip units, originally for gaming but now dominant in AI training and inference workloads. Its CUDA software platform creates deep switching costs, locking AI researchers and enterprises into its hardware ecosystem. Nvidia also sells networking, data center infrastructure, and is expanding into sovereign AI, robotics, and autonomous vehicle platforms.",
+          "founded_year": 1993,
+          "is_public": true,
+          "ticker": "NVDA",
+          "exchange": "NASDAQ",
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": "~$130.5B (FY2025, ending Jan 2025)",
+          "net_income": "~$72.9B (FY2025, ending Jan 2025)"
+        }
+      }
+    }
+  ]
+}
