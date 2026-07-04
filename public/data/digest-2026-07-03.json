@@ -1,0 +1,96 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-04T09:29:37.020059+00:00",
+  "article_count": 2,
+  "articles": [
+    {
+      "id": "https://techcrunch.com/?p=3134572",
+      "title": "The Dune keypad device can be your meeting controller and more",
+      "url": "https://techcrunch.com/2026/07/03/the-dune-keypad-device-can-be-your-meeting-controller-and-more/",
+      "published_date": "Fri, 03 Jul 2026 18:28:30 +0000",
+      "author": "Ivan Mehta",
+      "content": "The gadget has three buttons, and it changes context based on what app you are looking at. For instance, in meeting apps and sites, it could be toggle mic, toggle video, and bring window to the front.",
+      "analysis": {
+        "headline": "Dune's Context-Aware Keypad Bets on Physical Controls as Meeting Fatigue Drives Peripheral Demand",
+        "summary": "Dune's three-button keypad device dynamically reassigns its controls based on the active application, functioning as a meeting controller (mute, video toggle, window focus) and adapting to other software contexts. The device targets remote workers fatigued by keyboard shortcuts and cluttered UI. Significance lies in the resurgent market for dedicated physical input peripherals optimized for software-defined workflows, a niche seeing renewed hardware investment post-pandemic.",
+        "concepts": [
+          {
+            "term": "Context-aware input remapping",
+            "explanation": "A firmware/software layer that intercepts the active application window or process and dynamically reassigns physical input signals — keystrokes, button presses, or encoder rotations — to application-specific commands without user intervention. This differs from static macro-key configurations (e.g., traditional programmable keyboards) because the mapping state machine is driven by foreground process detection, typically via OS accessibility APIs or a companion daemon. The complexity lies in reliable cross-platform process detection and handling edge cases like browser-based apps versus native clients.",
+            "context": "The Dune keypad uses this mechanism to automatically switch between meeting-app functions (mic mute, camera toggle) and other application-specific controls depending on which window is active."
+          },
+          {
+            "term": "HID (Human Interface Device) class firmware",
+            "explanation": "The USB/Bluetooth HID specification defines a standardized protocol stack that allows input peripherals to communicate with host OSes without custom drivers, using descriptor tables that declare input report formats. Vendors building smart peripherals often operate at the boundary between raw HID (for broad compatibility) and proprietary companion-app layers (for advanced features like context switching). The tension between driverless HID compliance and feature-rich software integration is a core engineering and go-to-market constraint for this hardware category.",
+            "context": "A device like Dune's keypad almost certainly operates as a USB/Bluetooth HID device at the OS level while relying on a companion application to handle the context-switching logic and application detection layer."
+          },
+          {
+            "term": "Peripheral-led workflow optimization",
+            "explanation": "A product category and GTM thesis premised on the idea that dedicated physical controls reduce cognitive switching costs and error rates in high-frequency digital workflows — validated historically by stream decks, dedicated dial controllers (e.g., Loupedeck), and audio interfaces with DAW integration. The market is fragmented, hardware margins are thin, and retention depends almost entirely on software ecosystem depth and third-party integrations rather than the hardware itself.",
+            "context": "Dune is entering this category targeting meeting-heavy knowledge workers, competing implicitly with Elgato Stream Deck and Loupedeck, whose initial niches were content creation before expanding to productivity use cases."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Dune",
+          "what_it_does": "Dune manufactures a compact, context-aware physical keypad peripheral designed for knowledge workers. Its core product automatically remaps a small set of physical buttons to application-specific functions — prioritizing video conferencing controls — based on the user's active application, mediated by companion software.",
+          "founded_year": null,
+          "is_public": false,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3138306",
+      "title": "Chevy built an all-American EV truck — why is nobody buying it?",
+      "url": "https://techcrunch.com/2026/07/03/chevy-built-an-all-american-ev-truck-why-is-nobody-buying-it/",
+      "published_date": "Fri, 03 Jul 2026 16:30:00 +0000",
+      "author": "Tim De Chant",
+      "content": "The Chevy Silverado EV is a solid first draft of an EV pickup truck. Here's what could make it better.",
+      "analysis": {
+        "headline": "Chevy Silverado EV Struggles to Find Buyers Despite Strong Product Fundamentals — Here's the Structural Problem",
+        "summary": "The Chevy Silverado EV, GM's flagship electric pickup, is failing to gain commercial traction despite being a competent first-generation product. The article diagnoses the gap between product quality and consumer adoption, pointing to pricing, charging infrastructure gaps, and consumer hesitancy in the core truck-buying demographic. In a segment dominated by Ford F-150 Lightning and Tesla Cybertruck, GM's execution risk lies less in engineering and more in positioning and go-to-market strategy.",
+        "concepts": [
+          {
+            "term": "Incumbent OEM EV Transition Risk",
+            "explanation": "Legacy automakers face a structural tension when electrifying core profit-generating nameplates: cannibalizing high-margin ICE variants while absorbing significant EV-related capital expenditure before scale economies materialize. Unlike pure-play EV startups, incumbents carry dealer network friction, union cost structures, and brand expectations that constrain pricing flexibility and product cadence.",
+            "context": "GM is attempting to electrify its best-selling Silverado franchise — a vehicle with deep brand loyalty among ICE truck buyers — without alienating its existing customer base or undermining its profitable ICE Silverado lineup."
+          },
+          {
+            "term": "Frunk and Cargo Utility Architecture in Work Trucks",
+            "explanation": "For commercial and prosumer truck buyers, utility architecture — frunk volume, bed pass-through, power export (V2H/V2L), and towing-adjusted range — functions as a primary purchase criterion, not a feature differentiator. EV trucks must compete on work-site utility metrics, not just range, and shortfalls in these areas disproportionately impact fleet and professional-use adoption curves.",
+            "context": "The Silverado EV's value proposition hinges on practical utility features that traditional truck buyers demand; gaps here directly explain sluggish adoption among the core demographic GM most needs to convert."
+          },
+          {
+            "term": "Vehicle-to-Load (V2L) / Vehicle-to-Home (V2H) Bidirectional Charging",
+            "explanation": "V2L allows an EV to export AC power to external devices directly from the battery pack, while V2H enables full home backup integration via a dedicated inverter and transfer switch. These features require specific inverter hardware and grid interconnect certifications (UL 9741 in the US), and their commercial value proposition — particularly for contractor and rural buyers — is significant but poorly communicated at point of sale.",
+            "context": "Bidirectional capability is a key differentiator for the Silverado EV Work Truck trim and represents a concrete utility argument for truck-segment buyers, yet adoption barriers suggest GM has not effectively merchandised this capability."
+          },
+          {
+            "term": "Segment-Level Price Elasticity in Fleet vs. Retail EV Markets",
+            "explanation": "Fleet buyers and retail consumers exhibit substantially different price elasticity and total-cost-of-ownership (TCO) calculus for commercial EVs. Fleet purchasers can amortize higher sticker prices against fuel and maintenance savings over defined duty cycles, while retail truck buyers in the $70K+ segment face financing sensitivity and are less tolerant of range-anxiety trade-offs versus ICE alternatives at similar price points.",
+            "context": "The Silverado EV's pricing structure positions it against both premium retail buyers and fleet operators — a dual-channel strategy that risks under-serving both without a clear TCO narrative tailored to each segment."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "General Motors",
+          "what_it_does": "General Motors designs, manufactures, and sells vehicles and vehicle parts globally under brands including Chevrolet, GMC, Buick, and Cadillac. The company is executing a multi-billion dollar pivot toward electric vehicles under its Ultium battery platform strategy, while continuing to generate the majority of revenue and profit from ICE trucks and SUVs in North America.",
+          "founded_year": 1908,
+          "is_public": true,
+          "ticker": "GM",
+          "exchange": "NYSE",
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": "~$187B (FY2024)",
+          "net_income": "~$6.0B (FY2024)"
+        }
+      }
+    }
+  ]
+}
