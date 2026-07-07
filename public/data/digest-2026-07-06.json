@@ -1,0 +1,406 @@
+{
+  "date": "2026-07-06",
+  "generated_at": "2026-07-07T10:32:38.396070+00:00",
+  "article_count": 14,
+  "articles": [
+    {
+      "id": "https://techcrunch.com/?p=3139226",
+      "title": "The first American autonomous ground vehicles are fighting in Ukraine",
+      "url": "https://techcrunch.com/2026/07/07/the-first-american-autonomous-ground-vehicles-are-fighting-in-ukraine/",
+      "published_date": "Tue, 07 Jul 2026 09:00:00 +0000",
+      "author": "Tim Fernholz",
+      "content": "Forterra has deployed more than 100",
+      "analysis": {
+        "headline": "Forterra Deploys 100+ Autonomous Ground Vehicles in Ukraine — First Combat Use by a U.S. Company",
+        "summary": "Forterra has deployed over 100 autonomous ground vehicles (AGVs) in Ukraine, marking the first operational combat use of American autonomous ground systems. This is a significant milestone for defense autonomy, validating battlefield viability of unmanned logistics and resupply under live fire conditions. The deployment accelerates DoD and NATO interest in scaling autonomous ground platforms, and positions Forterra as a first-mover in a defense segment with multi-billion dollar procurement potential as Western militaries reduce soldier exposure in contested logistics corridors.",
+        "concepts": [
+          {
+            "term": "Autonomous Ground Vehicle (AGV) — Defense-Grade",
+            "explanation": "Unlike industrial AGVs operating in structured environments, defense-grade AGVs must perform in GPS-degraded, electronically contested, and kinetically hostile environments. They typically rely on sensor fusion (LiDAR, radar, stereo vision) with onboard compute capable of operating in RF-denied conditions, making them fundamentally harder to engineer than commercial self-driving systems. The key risk threshold is fail-safe behavior under jamming or adversarial spoofing, not just navigation accuracy.",
+            "context": "Forterra's deployment in Ukraine is the first live-combat validation of this class of system by a U.S. company, providing real-world data on performance under electronic warfare and contested terrain that no test range can replicate."
+          },
+          {
+            "term": "Autonomous Logistics Resupply (Last-Mile Military)",
+            "explanation": "Military last-mile resupply — moving materiel from forward staging areas to frontline units — accounts for a disproportionate share of combat casualties among non-combat personnel. Autonomous systems targeting this function are distinct from weapons platforms and face a different regulatory and rules-of-engagement framework, generally bypassing the lethal autonomous weapons debate. This makes them a faster procurement pathway with fewer legal and ethical friction points.",
+            "context": "Forterra's vehicles appear positioned in the resupply and logistics role in Ukraine, the least politically contested entry point for autonomous ground systems in a live conflict."
+          },
+          {
+            "term": "HOTA / Other Transaction Authority (OTA) Defense Procurement",
+            "explanation": "OTA agreements allow the DoD to contract for prototype development and limited deployment outside the Federal Acquisition Regulation (FAR) framework, enabling faster iteration with non-traditional defense vendors. They are the primary mechanism through which startups like Forterra enter the defense supply chain without the overhead of full MIL-SPEC acquisition cycles. The risk is that OTA contracts don't automatically transition to full production contracts (PEO programs), creating a 'valley of death' between prototype and scale.",
+            "context": "Forterra, as a venture-backed startup, almost certainly entered the Ukraine deployment pipeline via OTA or a foreign military sales-adjacent mechanism, which will be a key factor in whether this battlefield validation converts to a scaled DoD program of record."
+          },
+          {
+            "term": "Electronic Warfare (EW) Resilience in Autonomous Systems",
+            "explanation": "Ukraine is one of the most EW-dense combat environments in history, with both sides deploying GPS jamming, spoofing, and RF signal suppression across the battlespace. Autonomous systems dependent on GNSS for positioning or on cellular/satellite uplinks for telemetry are operationally degraded or mission-killed in this environment. EW resilience — achieved through inertial navigation, visual odometry, and mesh radio with frequency-hopping — is now a de facto minimum viable requirement for any autonomous defense platform.",
+            "context": "Forterra's successful deployment of 100+ vehicles in Ukraine implicitly validates their EW resilience architecture, which is arguably more commercially valuable as proof-of-concept than the vehicles themselves."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Forterra",
+          "what_it_does": "Forterra develops autonomous ground vehicles and autonomy software primarily for defense and government applications. Its core product line includes unmanned ground vehicles (UGVs) designed for logistics, resupply, and force protection missions in contested environments. The company adapts its AutonomouStuff-heritage autonomy stack for military-grade reliability in GPS-denied and EW-contested conditions.",
+          "founded_year": 2020,
+          "is_public": false,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": "~$75M",
+          "key_funding_rounds": [
+            {
+              "round": "Series A",
+              "amount": "~$25M",
+              "year": 2021,
+              "lead_investor": "Catapult Ventures / undisclosed"
+            },
+            {
+              "round": "Series B",
+              "amount": "~$50M",
+              "year": 2022,
+              "lead_investor": "undisclosed defense-focused investors"
+            }
+          ],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139394",
+      "title": "Netflix invented binge-watching. Now it may have outgrown it.",
+      "url": "https://techcrunch.com/2026/07/06/netflix-invented-binge-watching-now-it-may-have-outgrown-it/",
+      "published_date": "Tue, 07 Jul 2026 00:47:33 +0000",
+      "author": "Sarah Perez",
+      "content": "A new report suggests Netflix viewers aren’t sticking around for Season 2. The bigger issue may be that binge-watching itself is no longer the advantage it once was.",
+      "analysis": {
+        "headline": "Netflix's Binge Model Under Pressure as Season 2 Retention Data Signals Structural Viewer Fatigue",
+        "summary": "A new report indicates Netflix subscribers are not returning for second seasons of original series, raising questions about whether the binge-release model — Netflix's core content differentiation strategy — has become a liability rather than an asset. As competitors adopt hybrid release cadences and SVOD saturation intensifies, the all-at-once drop may be accelerating content burnout and suppressing long-term subscriber engagement, a critical metric for justifying content spend at scale.",
+        "concepts": [
+          {
+            "term": "SVOD Retention Curve",
+            "explanation": "In subscription video-on-demand, the retention curve maps the percentage of subscribers who remain active across successive content seasons or months post-acquisition. Season 2 drop-off is particularly damaging because it signals content investment is driving acquisition but failing to build habitual engagement — the latter being the primary lever for reducing churn-driven subscriber acquisition cost (SAC).",
+            "context": "The report's finding that Netflix viewers aren't returning for Season 2 points to a deteriorating retention curve, undermining the unit economics of commissioning multi-season originals."
+          },
+          {
+            "term": "Binge-release windowing strategy",
+            "explanation": "The practice of releasing an entire season simultaneously rather than episodically — Netflix's signature content distribution format since House of Cards in 2013. While it drove early subscriber growth and press cycles, it compresses the cultural conversation window to days rather than weeks, eliminates habitual weekly touchpoints, and makes content feel disposable post-completion. Competitors like HBO and Amazon have increasingly adopted weekly release cadences precisely to sustain engagement duration.",
+            "context": "The article questions whether binge-release, once Netflix's competitive moat, is now accelerating viewer exhaustion and reducing the stickiness of its original content slate."
+          },
+          {
+            "term": "Content amortization risk",
+            "explanation": "Netflix capitalizes content production costs as assets on its balance sheet and amortizes them over an expected useful life. If Season 2 viewership collapses, the assumed revenue-generating lifespan of a multi-season commission is overstated, requiring accelerated write-downs and distorting the true cost-per-engagement metric. This is a non-trivial accounting and strategic risk given Netflix's ~$17B annual content spend.",
+            "context": "Poor Season 2 retention directly challenges Netflix's content investment thesis, as multi-season originals are underwritten with assumptions of compounding viewership that declining return rates invalidate."
+          },
+          {
+            "term": "Engagement-hours reporting metric",
+            "explanation": "Netflix shifted from reporting subscriber view counts to aggregate engagement hours in 2023 — a metric that obscures per-title completion rates and season-over-season audience decay. While it provides a broader picture of platform time spent, it deliberately makes it harder for analysts and press to identify individual title underperformance, including exactly the Season 2 drop-off dynamic this report surfaces.",
+            "context": "The opacity of Netflix's engagement-hours metric means the Season 2 retention issue identified in the report likely required third-party measurement tools, since Netflix's own disclosures are structured to minimize visibility into this weakness."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Netflix",
+          "what_it_does": "Netflix is a global subscription streaming platform offering on-demand access to licensed and original films, series, and documentaries. Its core business model is monthly recurring subscription revenue across tiered plans including an ad-supported tier launched in 2022. It operates in 190+ countries and produces a significant volume of original content annually to drive subscriber acquisition and retention.",
+          "founded_year": 1997,
+          "is_public": true,
+          "ticker": "NFLX",
+          "exchange": "NASDAQ",
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": "$39.0B (FY2024)",
+          "net_income": "$8.7B (FY2024)"
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139436",
+      "title": "The ‘first’ AI-run ransomware attack still needed a human",
+      "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/",
+      "published_date": "Mon, 06 Jul 2026 23:56:14 +0000",
+      "author": "Connie Loizos",
+      "content": "An AI agent carried out the technical execution of a real-world ransomware attack for the first known time, but new details show a human still chose the victim, set up the infrastructure, and supplied stolen credentials — meaning it wasn't quite the fully autonomous cybercrime debut that last week's headlines suggested.",
+      "analysis": {
+        "headline": "AI-Executed Ransomware Attack Confirmed — But Human Operators Still Pulling the Strings",
+        "summary": "An AI agent autonomously executed the technical steps of a ransomware attack in what is claimed as a first, but a human actor selected the victim, established infrastructure, and provided stolen credentials. The incident is significant not as a fully autonomous cybercrime milestone but as evidence that AI is being integrated into the attack chain as an execution layer, lowering the skill barrier for ransomware operators while humans retain strategic control.",
+        "concepts": [
+          {
+            "term": "AI agent (in offensive cyber operations)",
+            "explanation": "In this context, an AI agent refers to an LLM or autonomous model capable of sequencing multi-step technical tasks — such as lateral movement, payload deployment, or encryption triggering — without real-time human instruction per step. The critical distinction is between agentic task execution and full autonomy; current models can handle execution pipelines but still depend on human-supplied context, credentials, and targeting decisions.",
+            "context": "The AI agent handled technical execution of the ransomware deployment, but remained dependent on human-provided infrastructure and credentials — illustrating the current ceiling of offensive AI autonomy."
+          },
+          {
+            "term": "Credential-stuffing / stolen credential supply chain",
+            "explanation": "Ransomware operators increasingly decouple initial access from payload deployment. Stolen credentials are sourced from initial access brokers (IABs) on dark web markets, allowing the attacking party to bypass the technically demanding intrusion phase entirely. This commoditization of access means the 'hard part' of an attack is often purchased, not executed — and now the deployment phase is being automated too.",
+            "context": "The human operator supplied stolen credentials to the AI agent, confirming the attack leveraged the established IAB ecosystem rather than requiring the AI to perform its own intrusion."
+          },
+          {
+            "term": "Human-in-the-loop vs. fully autonomous cyberattack",
+            "explanation": "The distinction matters enormously for threat modeling, legal attribution, and insurance underwriting. A fully autonomous attack — where AI selects, targets, intrudes, and exfiltrates without human direction — would represent a categorical escalation in threat surface and complicate existing cybercrime statutes built around human intent. The current incident remains 'human-directed, AI-executed,' which preserves existing legal and defensive frameworks but signals the trajectory.",
+            "context": "Headlines overstated the autonomy level; human decisions on victim selection and infrastructure setup mean this is an augmented attack, not an autonomous one — a meaningful legal and strategic distinction."
+          },
+          {
+            "term": "Ransomware-as-a-Service (RaaS) affiliate model",
+            "explanation": "RaaS platforms separate ransomware development from deployment by recruiting affiliates who execute attacks in exchange for a revenue share (typically 70–80% to the affiliate). Integrating AI execution agents into this model could drastically lower the technical bar for affiliates, potentially expanding the pool of threat actors and increasing attack volume without requiring deep offensive security expertise.",
+            "context": "The AI agent effectively performed the role a technically skilled affiliate would play in a RaaS model, suggesting AI could commoditize even the execution layer of ransomware operations."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": null,
+          "what_it_does": null,
+          "founded_year": null,
+          "is_public": null,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139406",
+      "title": "US investors will soon get access to SK Hynix, another memory maker riding the AI boom",
+      "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/",
+      "published_date": "Mon, 06 Jul 2026 23:21:03 +0000",
+      "author": "Julie Bort",
+      "content": "SK Hynix is experiencing a boom credited to AI. It will ride that to a multibillion-dollar U.S. IPO, expected to take place on Friday.",
+      "analysis": {
+        "headline": "SK Hynix Eyes U.S. IPO to Capitalize on AI-Driven Memory Demand Surge",
+        "summary": "South Korean memory chipmaker SK Hynix is pursuing a U.S. IPO, expected to price Friday, to tap American capital markets amid surging AI-driven demand for high-bandwidth memory (HBM). The company is a dominant supplier of HBM3E chips used in Nvidia's H100 and H200 GPUs. The listing gives U.S. retail and institutional investors direct equity exposure to the AI infrastructure buildout via the memory layer — a segment previously accessible primarily through Korean exchanges.",
+        "concepts": [
+          {
+            "term": "High-Bandwidth Memory (HBM)",
+            "explanation": "HBM is a stacked DRAM architecture using through-silicon vias (TSVs) to vertically interconnect memory dies, delivering dramatically higher bandwidth and lower power consumption than conventional DDR or LPDDR. HBM3E, the current generation, achieves up to 1.2 TB/s bandwidth per stack. Supply is effectively a duopoly between SK Hynix and Samsung, with Micron as a distant third entrant — giving SK Hynix extraordinary pricing power in the current AI cycle.",
+            "context": "SK Hynix's revenue and valuation premium are directly tied to its HBM leadership; it supplies the majority of HBM used in Nvidia's flagship AI accelerators, making HBM yield and production capacity the core investment thesis."
+          },
+          {
+            "term": "Cross-listing / U.S. ADR vs. Direct Listing",
+            "explanation": "Foreign companies accessing U.S. equity markets can do so via American Depositary Receipts (ADRs), a full SEC-registered IPO, or a direct listing. Each carries distinct disclosure obligations (Form F-1 vs. 20-F), shareholder rights implications, and liquidity profiles. A full SEC-registered offering subjects the issuer to Regulation S-K disclosure standards and U.S. litigation risk, but unlocks the deepest institutional capital pools and index inclusion eligibility.",
+            "context": "SK Hynix's U.S. IPO structure — whether a primary offering, ADR program, or dual-listing — determines the capital flow mechanics and which U.S. indices it may eventually qualify for, materially affecting passive fund demand."
+          },
+          {
+            "term": "Memory Semiconductor Cyclicality vs. Structural AI Demand",
+            "explanation": "DRAM and NAND markets are historically boom-bust, driven by oversupply as fabs ramp capacity in unison. The current cycle is complicated by a structural demand shift: AI training and inference workloads require HBM specifically, which has constrained supply, separate fab capacity, and higher ASPs than commodity DRAM. Investors must distinguish between HBM-driven structural tailwinds and the commodity memory cycle, which remains volatile.",
+            "context": "SK Hynix's IPO valuation will hinge on whether markets price it as a structural AI infrastructure play or apply traditional memory-sector cycle multiples — a distinction that could represent a significant valuation spread."
+          },
+          {
+            "term": "HSR Act Pre-Merger Notification (as applicable to foreign issuer U.S. listings)",
+            "explanation": "While HSR primarily governs M&A, large U.S. IPOs by foreign state-linked entities (SK Hynix's parent SK Group has government ties) can attract CFIUS scrutiny if the offering involves strategic technology transfer or significant U.S. institutional ownership thresholds. CFIUS jurisdiction over passive investments was expanded under FIRRMA (2018) to include certain non-controlling investments in TID U.S. businesses — advanced semiconductors qualify.",
+            "context": "As a leading-edge memory manufacturer with deep ties to U.S. AI supply chains, SK Hynix's U.S. capital raise could attract regulatory attention regarding foreign ownership concentration in critical semiconductor infrastructure."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "SK Hynix",
+          "what_it_does": "SK Hynix is the world's second-largest DRAM manufacturer and a leading NAND flash producer, headquartered in Icheon, South Korea. It is the dominant supplier of High-Bandwidth Memory (HBM) chips used in AI accelerators, particularly Nvidia's H100 and H200 GPUs. The company operates as a subsidiary of SK Group, one of South Korea's largest conglomerates.",
+          "founded_year": 1983,
+          "is_public": true,
+          "ticker": "000660",
+          "exchange": "KRX",
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": "~$66.2B KRW 66.19 trillion (FY2024)",
+          "net_income": "~$8.1B USD equivalent, KRW 19.8 trillion (FY2024)"
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139318",
+      "title": "Vercel CEO Guillermo Rauch on the fight to split off models from agents",
+      "url": "https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/",
+      "published_date": "Mon, 06 Jul 2026 19:49:10 +0000",
+      "author": "Russell Brandom",
+      "content": "\"The reality is, when you're optimizing for production, you start looking at a price/performance,\" Guillermo Rauch tells TechCrunch.",
+      "analysis": {
+        "headline": "Vercel's CEO Signals Architectural Shift: Why Decoupling LLMs from Agents Is the Next Infrastructure Battle",
+        "summary": "Vercel CEO Guillermo Rauch argues that production AI deployments demand separating model selection from agent orchestration logic, driven by price/performance optimization pressures. This signals a maturing AI infrastructure market where monolithic AI stacks are giving way to modular, composable architectures — a structural shift with significant implications for vendor lock-in, cost management, and deployment flexibility at scale.",
+        "concepts": [
+          {
+            "term": "Model-Agent Decoupling",
+            "explanation": "The architectural pattern of separating the inference layer (LLM selection and execution) from the orchestration layer (agent logic, tool use, memory, planning) so each can be optimized, swapped, or scaled independently. This mirrors the service-oriented architecture evolution in traditional software, reducing coupling risk and enabling heterogeneous model routing based on cost, latency, or capability requirements.",
+            "context": "Rauch's framing of price/performance optimization in production implicitly advocates for this decoupling — teams should not be locked into a single model provider's agent framework when runtime economics demand flexibility."
+          },
+          {
+            "term": "Price/Performance Optimization in Inference",
+            "explanation": "In production AI systems, inference cost is a primary operational variable — different models carry vastly different token pricing, latency profiles, and capability ceilings. Optimizing price/performance typically involves model routing (directing queries to cheaper models when task complexity permits), batching strategies, and caching, all of which require abstraction layers above the raw model API.",
+            "context": "Rauch cites this directly as the forcing function driving teams to think architecturally rather than just picking a flagship model and deploying it wholesale."
+          },
+          {
+            "term": "Agent Orchestration Layer",
+            "explanation": "The middleware responsible for decomposing goals into subtasks, managing tool calls, maintaining state/memory across turns, and handling failure/retry logic in agentic AI systems. Frameworks like LangGraph, AutoGen, and Vercel's own AI SDK compete at this layer. The critical nuance is that orchestration logic embeds significant business logic, making it more sticky and migration-costly than the underlying model itself.",
+            "context": "Vercel, as a deployment and frontend infrastructure company expanding into AI tooling, has strategic interest in owning the orchestration layer while remaining model-agnostic — Rauch's argument directly supports this positioning."
+          },
+          {
+            "term": "Vendor Lock-in Risk in AI Stacks",
+            "explanation": "Integrated model+agent offerings from hyperscalers (e.g., AWS Bedrock Agents, Google Vertex AI Agents, OpenAI Assistants API) create lock-in at multiple layers simultaneously — compute, model weights, memory/storage, and orchestration. Unlike traditional software lock-in, switching costs compound because proprietary tool schemas, memory formats, and prompt engineering are non-portable across providers.",
+            "context": "The push to split models from agents is partly a risk management argument — enterprises that decouple these layers retain negotiating leverage with model providers as the market commoditizes."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Vercel",
+          "what_it_does": "Vercel is a cloud platform specializing in frontend deployment and edge infrastructure, best known as the primary commercial backer and hosting platform for Next.js. It provides CI/CD pipelines, edge functions, and increasingly AI SDK tooling targeting developers building production-grade web and AI applications.",
+          "founded_year": 2015,
+          "is_public": false,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": "~$313M",
+          "key_funding_rounds": [
+            {
+              "round": "Series A",
+              "amount": "$21M",
+              "date": "2020",
+              "lead_investor": "Accel"
+            },
+            {
+              "round": "Series B",
+              "amount": "$40M",
+              "date": "2020",
+              "lead_investor": "GV"
+            },
+            {
+              "round": "Series C",
+              "amount": "$102M",
+              "date": "2021",
+              "lead_investor": "Bedrock Capital"
+            },
+            {
+              "round": "Series D",
+              "amount": "$150M",
+              "date": "2022",
+              "lead_investor": "Insight Partners"
+            }
+          ],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139329",
+      "title": "You can now customize Siri’s pace and expressivity in the latest iOS 27 beta",
+      "url": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/",
+      "published_date": "Mon, 06 Jul 2026 19:01:59 +0000",
+      "author": "Sarah Perez",
+      "content": "The update is part of Apple's broader effort to make Siri feel more natural and personal, as it rebuilds the assistant around generative AI.",
+      "analysis": {
+        "headline": "You can now customize Siri’s pace and expressivity in the latest iOS 27 beta",
+        "summary": "The update is part of Apple's broader effort to make Siri feel more natural and personal, as it rebuilds the assistant around generative AI.",
+        "concepts": [],
+        "related_articles": []
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139204",
+      "title": "Amazon competitor Bookshop.org says Kobo eReader support will happen this year after all",
+      "url": "https://techcrunch.com/2026/07/06/amazon-competitor-bookshop-org-says-kobo-e-reader-support-will-happen-this-year-after-all/",
+      "published_date": "Mon, 06 Jul 2026 18:12:01 +0000",
+      "author": "Julie Bort",
+      "content": "Bookship.org seemed to delay this anticipated partnership again, but tells TechCrunch that it has settled business terms and is working on integration.",
+      "analysis": {
+        "headline": "Amazon competitor Bookshop.org says Kobo eReader support will happen this year after all",
+        "summary": "Bookship.org seemed to delay this anticipated partnership again, but tells TechCrunch that it has settled business terms and is working on integration.",
+        "concepts": [],
+        "related_articles": []
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139169",
+      "title": "If you use Google, you’re training its AI. Here’s how to opt out.",
+      "url": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out/",
+      "published_date": "Mon, 06 Jul 2026 17:04:58 +0000",
+      "author": "Sarah Perez",
+      "content": "Consider this a belated PSA: A recent change to Google’s privacy settings is allowing the company to store more of your data, including media such as “images, files, and audio and video recordings,” to improve its AI models.",
+      "analysis": {
+        "headline": "If you use Google, you’re training its AI. Here’s how to opt out.",
+        "summary": "Consider this a belated PSA: A recent change to Google’s privacy settings is allowing the company to store more of your data, including media such as “images, files, and audio and video recordings,” t",
+        "concepts": [],
+        "related_articles": []
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139154",
+      "title": "Apple brings back card payments for Apple Account purchases in India after a four-year hiatus",
+      "url": "https://techcrunch.com/2026/07/06/apple-brings-back-card-payments-for-apple-account-purchases-in-india-after-a-four-year-hiatus/",
+      "published_date": "Mon, 06 Jul 2026 16:21:03 +0000",
+      "author": "Jagmeet Singh",
+      "content": "Apple has started a phased rollout of card payments for Apple Account purchases in India after adapting to the country's payments framework.",
+      "analysis": {
+        "headline": "Apple brings back card payments for Apple Account purchases in India after a four-year hiatus",
+        "summary": "Apple has started a phased rollout of card payments for Apple Account purchases in India after adapting to the country's payments framework.",
+        "concepts": [],
+        "related_articles": []
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139164",
+      "title": "Microsoft lays off nearly 5,000 employees across Xbox, commercial sales",
+      "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
+      "published_date": "Mon, 06 Jul 2026 15:32:43 +0000",
+      "author": "Rebecca Bellan",
+      "content": "Microsoft cut around 4,800 roles, or 2.1% of its global workforce, on Monday — the latest in a series of layoffs that’s stoking fears of AI replacing jobs. The layoffs will hit Xbox and commercial sales the hardest.",
+      "analysis": {
+        "headline": "Microsoft lays off nearly 5,000 employees across Xbox, commercial sales",
+        "summary": "Microsoft cut around 4,800 roles, or 2.1% of its global workforce, on Monday — the latest in a series of layoffs that’s stoking fears of AI replacing jobs. The layoffs will hit Xbox and commercial sal",
+        "concepts": [],
+        "related_articles": []
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139160",
+      "title": "Reddit is using LLMs to solve a problem LLMs largely created",
+      "url": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created/",
+      "published_date": "Mon, 06 Jul 2026 15:22:08 +0000",
+      "author": "Amanda Silberling",
+      "content": "In the AI era, platforms have no choice but to fight fire with fire to cull spam.",
+      "analysis": {
+        "headline": "Reddit is using LLMs to solve a problem LLMs largely created",
+        "summary": "In the AI era, platforms have no choice but to fight fire with fire to cull spam.",
+        "concepts": [],
+        "related_articles": []
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139125",
+      "title": "Canadian spy agency says it hacked drug traffickers, extremists, and a ransomware gang last year",
+      "url": "https://techcrunch.com/2026/07/06/canadian-spy-agency-says-it-hacked-drug-traffickers-extremists-and-a-ransomware-gang-last-year/",
+      "published_date": "Mon, 06 Jul 2026 14:43:59 +0000",
+      "author": "Zack Whittaker",
+      "content": "The hacking operations disclosed in a Canadian spy agency's annual report underscores some pressing national security threats facing the country and its top allies.",
+      "analysis": {
+        "headline": "Canadian spy agency says it hacked drug traffickers, extremists, and a ransomware gang last year",
+        "summary": "The hacking operations disclosed in a Canadian spy agency's annual report underscores some pressing national security threats facing the country and its top allies.",
+        "concepts": [],
+        "related_articles": []
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139052",
+      "title": "How to reserve and change your WhatsApp username",
+      "url": "https://techcrunch.com/2026/07/06/how-to-reserve-and-change-your-whatsapp-username/",
+      "published_date": "Mon, 06 Jul 2026 14:15:30 +0000",
+      "author": "Ivan Mehta",
+      "content": "WhatsApp now lets users reserve usernames ahead of the feature’s full rollout, making it possible to connect without sharing a phone number once usernames go live.",
+      "analysis": {
+        "headline": "How to reserve and change your WhatsApp username",
+        "summary": "WhatsApp now lets users reserve usernames ahead of the feature’s full rollout, making it possible to connect without sharing a phone number once usernames go live.",
+        "concepts": [],
+        "related_articles": []
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3139058",
+      "title": "Station F ramps up as a launchpad for Europe’s hottest AI startups",
+      "url": "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/",
+      "published_date": "Mon, 06 Jul 2026 13:00:00 +0000",
+      "author": "Anna Heim",
+      "content": "Station F, a Paris-based startup hub founded by French billionaire Xavier Niel, is gearing up for a new edition of its F/ai accelerator program in a bid to strengthen its positioning as a stepping stone for promising AI startups.",
+      "analysis": {
+        "headline": "Station F ramps up as a launchpad for Europe’s hottest AI startups",
+        "summary": "Station F, a Paris-based startup hub founded by French billionaire Xavier Niel, is gearing up for a new edition of its F/ai accelerator program in a bid to strengthen its positioning as a stepping sto",
+        "concepts": [],
+        "related_articles": []
+      }
+    }
+  ]
+}
