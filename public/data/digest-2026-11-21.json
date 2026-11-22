@@ -1,0 +1,277 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-22T15:15:46.993184+00:00",
+  "article_count": 6,
+  "articles": [
+    {
+      "id": "https://techcrunch.com/?p=3190069",
+      "title": "Can a TV be too large? An investigation",
+      "url": "https://techcrunch.com/2026/11/22/can-a-tv-be-too-large-an-investigation/",
+      "published_date": "Sun, 22 Nov 2026 15:00:00 +0000",
+      "author": "Lucas Ropek",
+      "content": "Can a TV be too large? This writer's recent upgrade to a 65-inch OLED came with some unexpected challenges.",
+      "analysis": {
+        "headline": "65-Inch OLED Adoption Exposes Hidden Ergonomic and Spatial Trade-offs as Consumer TV Sizes Balloon",
+        "summary": "TechCrunch writer Lucas Ropek documents first-hand friction from upgrading to a 65-inch OLED TV, surfacing practical challenges consumers face as panel sizes increase. The piece is a personal investigation rather than a data-driven report, but it reflects a broader industry trend: average TV screen sizes have grown steadily past 55 inches, driven by falling OLED and QLED panel costs, while living space dimensions have not kept pace.",
+        "concepts": [
+          {
+            "term": "OLED (Organic Light-Emitting Diode) panel technology",
+            "explanation": "OLED pixels self-illuminate and can switch off individually, delivering infinite contrast ratios and near-instant pixel response times unavailable in LCD-backlit panels. The trade-offs include susceptibility to permanent burn-in from static image retention, lower peak brightness versus Mini-LED competitors, and historically higher cost-per-inch — though that premium has compressed sharply as LG Display and Samsung Display have scaled production.",
+            "context": "The author's upgrade to a 65-inch OLED is the catalyst for the investigation, making OLED's specific size-scaling economics and viewing-distance sensitivity central to the story."
+          },
+          {
+            "term": "Optimal viewing distance (OVD)",
+            "explanation": "OVD is calculated relative to screen resolution and panel size — for 4K, the THX and SMPTE standards suggest sitting at approximately 1–1.5x the screen diagonal to fully exploit pixel density without resolving individual pixels. As panel sizes scale beyond 65 inches in fixed living environments, the viewer-to-screen angle can exceed the comfortable 40-degree horizontal field of view, causing eye strain and perceptual distortion rather than immersion.",
+            "context": "The 'unexpected challenges' Ropek references almost certainly include OVD violations in a typical apartment or suburban living room, where a 65-inch panel at a standard sofa distance may exceed the recommended viewing angle."
+          },
+          {
+            "term": "Panel size commoditization in consumer electronics",
+            "explanation": "Gen 8.5 and Gen 10.5 LCD fab lines produce glass substrates that tile most efficiently into 65-inch and 75-inch panels, creating a supply-side push toward those sizes regardless of consumer demand signals. This factory economics dynamic — not consumer preference alone — is a primary driver of why mid-range TV SKUs have clustered around 65 inches. OLED fabs at LG Display follow a similar logic with their WRGB stack process.",
+            "context": "Understanding why 65-inch has become the de facto mainstream size explains why Ropek's 'upgrade' was likely driven as much by market availability and pricing as by deliberate size selection."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": null,
+          "what_it_does": null,
+          "founded_year": null,
+          "is_public": null,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3191147",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "published_date": "Sat, 21 Nov 2026 21:37:10 +0000",
+      "author": "Anthony Ha",
+      "content": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "analysis": {
+        "headline": "Signal Locks Down Screenshots Amid AI-Powered Surveillance Fears — A Structural Privacy Shift, Not a Feature Tweak",
+        "summary": "Signal is restricting screenshot functionality across Android and iOS apps, citing what it describes as an 'existential threat' from AI surveillance capabilities. The move reflects growing concern that AI tools can now systematically harvest, index, and analyze content from messaging apps at scale — undermining end-to-end encryption's value if content can be captured at the display layer. Signal's response targets the 'last mile' vulnerability: data visible on-screen before encryption is applied or after decryption occurs.",
+        "concepts": [
+          {
+            "term": "Last-Mile Plaintext Vulnerability",
+            "explanation": "End-to-end encryption (E2EE) secures data in transit and at rest, but the encryption envelope opens at the endpoint — the display layer. Any content rendered on-screen exists in plaintext and is accessible to the OS, overlaying apps, or screenshot APIs before or after cryptographic protection applies. This is a structurally distinct attack surface from network interception and is not addressed by transport-layer security.",
+            "context": "Signal's screenshot restriction directly targets this vulnerability — recognizing that strong E2EE is insufficient if adversaries can programmatically capture rendered content at the UI layer."
+          },
+          {
+            "term": "FLAG_SECURE (Android) / Screenshot Prevention API",
+            "explanation": "Android's FLAG_SECURE window flag and iOS's equivalent mechanism instruct the OS to suppress screenshot and screen-recording capture at the system level, rendering black frames in place of app content. These are developer-enforced controls, not user-configurable, meaning enforcement is unilateral. However, they do not prevent physical camera capture of the screen, limiting their effectiveness against determined adversaries.",
+            "context": "Signal is extending or enforcing FLAG_SECURE-equivalent protections more broadly across its apps as a systemic policy, shifting from optional to default-restricted."
+          },
+          {
+            "term": "AI-Assisted Passive Surveillance at Scale",
+            "explanation": "Traditional surveillance required targeted interception; modern AI pipelines enable bulk collection of screenshots or screen recordings followed by automated OCR, semantic analysis, entity extraction, and relationship mapping at negligible marginal cost. This transforms opportunistic data capture into structured intelligence. The threat model is no longer just nation-state actors — commercial stalkerware and data brokers increasingly deploy similar pipelines.",
+            "context": "Signal frames its screenshot restriction as a direct response to this evolved threat model, acknowledging that AI lowers the barrier for adversaries to convert visual data capture into actionable surveillance at scale."
+          },
+          {
+            "term": "Secure Messaging Threat Model Expansion",
+            "explanation": "Classical secure messaging threat models prioritized network-layer adversaries (ISPs, government wiretapping, man-in-the-middle attacks). The expanded modern threat model includes endpoint compromise, metadata analysis, OS-level telemetry, and now AI-augmented visual data harvesting. Each layer requires distinct mitigations — cryptographic protocols address network threats but are architecturally irrelevant to display-layer capture.",
+            "context": "Signal's move signals a formal acknowledgment that its threat model has expanded beyond cryptographic guarantees into UX-level and OS-level controls."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Signal Foundation",
+          "what_it_does": "Signal Foundation is a nonprofit that develops and maintains Signal, an open-source end-to-end encrypted messaging and voice/video calling application. It operates on a donation-based model with no advertising or data monetization. Signal's protocol (the Signal Protocol) is widely licensed and underpins encryption in WhatsApp, Google Messages, and others.",
+          "founded_year": 2018,
+          "is_public": false,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": "~$105M (including founding donation from Brian Acton)",
+          "key_funding_rounds": [
+            {
+              "round": "Founding Donation",
+              "amount": "$50M",
+              "date": "2018",
+              "investors": "Brian Acton"
+            },
+            {
+              "round": "Additional Donation",
+              "amount": "$55M",
+              "date": "2021-02",
+              "investors": "Brian Acton"
+            }
+          ],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3191145",
+      "title": "A tale of two Nvidias",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "published_date": "Sat, 21 Nov 2026 21:07:42 +0000",
+      "author": "Anthony Ha",
+      "content": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "analysis": {
+        "headline": "Nvidia's Dual Reality: Record Earnings Clash With Executive Lobbying for Huang's Regulatory Relief",
+        "summary": "Nvidia presents a split narrative: its latest earnings report signals continued dominance in AI infrastructure spend, while tech executives are publicly lobbying for CEO Jensen Huang's intervention — likely on export controls or chip access policy. The divergence highlights how Nvidia's commercial success is increasingly entangled with geopolitical and regulatory constraints that financial metrics alone cannot capture. The stock story and the policy story are now inseparable.",
+        "concepts": [
+          {
+            "term": "Export Control Regime (BIS Entity List / Commerce Department licensing)",
+            "explanation": "The U.S. Bureau of Industry and Security controls semiconductor exports via the Export Administration Regulations (EAR), restricting sales of advanced chips (e.g., A100, H100, H20) to specific countries or entities without a license. These controls are extraterritorial, applying to foreign-made products with sufficient U.S. content, creating significant revenue exposure for fabless designers like Nvidia whose TAM is global.",
+            "context": "Executive lobbying for Jensen Huang's return likely centers on export control policy — Nvidia's ability to sell into China and other restricted markets is a direct function of BIS licensing decisions, making regulatory access as strategically critical as product roadmap."
+          },
+          {
+            "term": "Fabless Semiconductor Business Model",
+            "explanation": "Fabless designers own IP and architecture but outsource manufacturing to foundries (primarily TSMC). This maximizes R&D leverage and capital efficiency but creates concentration risk in the supply chain and geopolitical exposure — the designer cannot unilaterally control production geography or capacity allocation.",
+            "context": "Nvidia's earnings strength reflects fabless margin economics, but its policy vulnerability is amplified by reliance on TSMC fabs in Taiwan, making both trade and export policy existential levers."
+          },
+          {
+            "term": "Hyperscaler CapEx Cycle",
+            "explanation": "Major cloud providers (AWS, Azure, GCP, Meta) operate multi-year capital expenditure cycles for data center build-out. AI workload demand has extended and accelerated these cycles, creating durable GPU procurement pipelines rather than spot purchasing — this structural demand is what underpins Nvidia's sustained revenue beat cadence.",
+            "context": "Nvidia's earnings report reflects hyperscaler CapEx commitments already locked in; the risk is whether export restrictions or geopolitical shifts truncate the next cycle leg before orders materialize."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": "Nvidia",
+          "what_it_does": "Nvidia designs and markets graphics processing units (GPUs) and system-on-chip units. Originally focused on gaming graphics, it has become the dominant supplier of AI training and inference accelerators, with its H100/H200 and Blackwell GPU architectures forming the backbone of hyperscaler and enterprise AI infrastructure globally. Revenue is generated through its Data Center, Gaming, Professional Visualization, and Automotive segments.",
+          "founded_year": 1993,
+          "is_public": true,
+          "ticker": "NVDA",
+          "exchange": "NASDAQ",
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": "~$130B (FY2026 analyst consensus); $60.9B (FY2024 actual)",
+          "net_income": "~$29.8B (FY2024 actual)"
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3191127",
+      "title": "Trump says reported FBI database hack is ‘not good’",
+      "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
+      "published_date": "Sat, 21 Nov 2026 18:44:53 +0000",
+      "author": "Anthony Ha",
+      "content": "The FBI is reportedly investigating a hack of the National Crime Information Center.",
+      "analysis": {
+        "headline": "FBI's NCIC Database Reportedly Breached — A National Security Red Flag for Law Enforcement Infrastructure",
+        "summary": "The FBI is investigating a reported hack of the National Crime Information Center (NCIC), the federal database underpinning real-time law enforcement lookups nationwide. Trump publicly acknowledged the breach as 'not good.' The NCIC holds sensitive records on wanted persons, stolen property, and criminal histories, making a successful intrusion a severe counterintelligence and public safety risk. Few technical details have been confirmed, but the implications for law enforcement data integrity are significant.",
+        "concepts": [
+          {
+            "term": "National Crime Information Center (NCIC)",
+            "explanation": "The NCIC is the FBI's centralized, real-time database used by approximately 90,000 law enforcement agencies across the U.S. and Canada. It stores records on wanted persons, gang members, sex offenders, stolen vehicles, and protective orders. A compromise of NCIC data integrity — not just confidentiality — could allow adversaries to scrub records, insert false entries, or expose the identities of undercover operatives and protected witnesses.",
+            "context": "The reported hack targets this system directly, raising concerns not just about data exfiltration but about potential manipulation of records that officers rely on for split-second decisions in the field."
+          },
+          {
+            "term": "Criminal Justice Information Services (CJIS) Security Policy",
+            "explanation": "CJIS is the FBI division that governs NCIC and sets the mandatory security framework for all agencies accessing federal criminal justice data. The policy mandates multi-factor authentication, encryption in transit, audit logging, and strict physical/logical access controls. Breaches under CJIS purview trigger mandatory reporting, forensic audits, and potential suspension of agency access — creating cascading operational disruptions for local law enforcement.",
+            "context": "If the NCIC breach bypassed CJIS controls, it signals either a sophisticated supply-chain or insider-threat vector, or a failure in the FBI's own compliance with its own security mandates."
+          },
+          {
+            "term": "Counterintelligence exposure via law enforcement databases",
+            "explanation": "Foreign state actors prioritize infiltrating law enforcement databases not merely for bulk data theft but for operational intelligence — identifying informants, tracking federal investigations, and mapping surveillance capabilities. NCIC access historically requires terminal operator authentication, but federated access through state/local agency systems creates a wide attack surface that adversaries can exploit through weaker perimeter nodes rather than the core federal system.",
+            "context": "The NCIC breach, if confirmed as external intrusion, fits a pattern of nation-state targeting of U.S. law enforcement and intelligence infrastructure to map human assets and ongoing operations."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": null,
+          "what_it_does": null,
+          "founded_year": null,
+          "is_public": null,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3188069",
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "published_date": "Sat, 21 Nov 2026 16:00:00 +0000",
+      "author": "Lucas Ropek",
+      "content": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+      "analysis": {
+        "headline": "Hollywood Actor Licenses AI Likeness to Microdrama Startup — A Chinese Trend Tests U.S. Labor and IP Boundaries",
+        "summary": "An unnamed actor has licensed their AI-generated likeness to a microdrama startup, mirroring a model already widespread in China's short-video entertainment economy. Industry experts warn the trend could erode residual income structures, weaken SAG-AFTRA consent frameworks, and commoditize performer identity at scale. Microdramas — episodic short-form video content optimized for mobile — represent a fast-growing content format now attracting AI-driven production pipelines. The long-term IP and labor implications for Hollywood remain structurally unresolved.",
+        "concepts": [
+          {
+            "term": "Microdrama",
+            "explanation": "Short-form serialized video content — typically 60–90 second episodes designed for vertical mobile viewing — that originated in China's ReelShort and Kuaishou ecosystems. The format monetizes via episode unlocks or subscriptions, enabling high-volume, low-cost production cycles that compress traditional development timelines dramatically. Its economics favor AI-generated talent because per-episode production budgets are too thin to sustain SAG-AFTRA minimums.",
+            "context": "The startup in this article operates in this format, making AI likeness licensing economically attractive as a substitute for recurring on-set talent costs."
+          },
+          {
+            "term": "AI Likeness Licensing",
+            "explanation": "A contractual arrangement where a performer grants a company rights to generate synthetic audiovisual representations of their face, voice, or body using generative AI models — typically trained on consented source footage. The key legal risk lies in scope ambiguity: licenses may not adequately cap usage volume, derivative works, or character contexts, exposing performers to reputational and residual income loss. Post-SAG-AFTRA 2023 strike, this remains a contested frontier with no standardized deal structure.",
+            "context": "The actor in this article has entered such an arrangement with a microdrama platform, raising questions about whether consent frameworks and compensation models are adequate given the format's high-velocity content output."
+          },
+          {
+            "term": "Right of Publicity",
+            "explanation": "A state-level IP doctrine in the U.S. — strongest in California and New York — protecting individuals' commercial interest in their name, image, and likeness (NIL). Unlike copyright, it survives death in many states and is not federally preempted, creating a patchwork enforcement environment. AI-generated likenesses stress-test this doctrine because the synthetic output may not constitute direct 'use' of a recording, potentially sidestepping existing statutory protections.",
+            "context": "Any AI likeness deal in Hollywood implicates right of publicity law, and the absence of a federal NIL statute means enforceability varies dramatically by jurisdiction."
+          },
+          {
+            "term": "SAG-AFTRA AI Consent and Compensation Framework",
+            "explanation": "Provisions negotiated into the 2023 SAG-AFTRA Basic Agreement requiring explicit informed consent for AI replication of a performer's likeness, voice, or performance, plus compensation parity with the original work being replicated. The framework applies to signatory productions but leaves non-signatory and foreign-originated platforms — common in the microdrama space — largely outside its jurisdiction. This enforcement gap is a primary structural risk.",
+            "context": "If the microdrama startup is non-signatory, the actor's protections under the 2023 agreement may not apply, making the individual license terms the sole contractual safeguard."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": null,
+          "what_it_does": null,
+          "founded_year": null,
+          "is_public": null,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    },
+    {
+      "id": "https://techcrunch.com/?p=3191074",
+      "title": "Alaska, your next governor is a Wikipedia nerd",
+      "url": "https://techcrunch.com/2026/11/21/alaska-your-next-governor-is-a-wikipedia-nerd/",
+      "published_date": "Sat, 21 Nov 2026 15:18:29 +0000",
+      "author": "Amanda Silberling",
+      "content": "Jonathan Kreiss-Tomkins, Alaska's governor-elect, has made more than 13,000 WIkipedia edits.",
+      "analysis": {
+        "headline": "Alaska's Governor-Elect Has Made 13,000+ Wikipedia Edits — A Signal of Civic Digital Engagement at the Executive Level",
+        "summary": "Jonathan Kreiss-Tomkins, Alaska's governor-elect, has made over 13,000 Wikipedia edits, marking him as one of the platform's more prolific volunteer contributors. The significance lies less in the volume and more in what it signals: an elected executive with a demonstrated, hands-on commitment to open-knowledge infrastructure — a rare trait among politicians at the gubernatorial level.",
+        "concepts": [
+          {
+            "term": "Wikipedia volunteer editorship",
+            "explanation": "Wikipedia operates on a volunteer-driven, consensus-based editorial model governed by policies like WP:NPOV (Neutral Point of View), WP:V (Verifiability), and WP:NOR (No Original Research). With 13,000+ edits, an editor typically achieves 'autoconfirmed' and potentially 'extended confirmed' status, granting access to semi-protected pages. At this scale, editors often participate in AfD (Articles for Deletion) debates and RfC (Request for Comment) processes that shape content policy.",
+            "context": "Kreiss-Tomkins' edit count places him in a relatively small cohort of high-volume contributors; the median Wikipedia editor makes far fewer contributions, making 13,000+ edits a meaningful signal of sustained, substantive engagement rather than casual use."
+          },
+          {
+            "term": "Open-knowledge infrastructure",
+            "explanation": "This refers to publicly maintained, openly licensed information systems — Wikipedia being the canonical example — that underpin everything from AI training datasets to academic research and government knowledge bases. These systems depend on volunteer labor and face structural risks including editor burnout, systemic bias, and adversarial editing (astroturfing, COI editing). Their governance models are increasingly scrutinized as AI companies consume this content at scale.",
+            "context": "An Alaska governor with deep Wikipedia involvement could meaningfully influence state-level policy on open data, digital literacy, or even how state agencies contribute to or rely on open-knowledge platforms."
+          }
+        ],
+        "related_articles": [],
+        "company_intel": {
+          "company_name": null,
+          "what_it_does": null,
+          "founded_year": null,
+          "is_public": null,
+          "ticker": null,
+          "exchange": null,
+          "total_funding": null,
+          "key_funding_rounds": [],
+          "revenue": null,
+          "net_income": null
+        }
+      }
+    }
+  ]
+}
